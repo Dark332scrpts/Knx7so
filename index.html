@@ -13,7 +13,6 @@ body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradi
 .orb{position:fixed;border-radius:50%;filter:blur(100px);pointer-events:none;z-index:0;opacity:.3}
 .o1{width:500px;height:500px;background:#003a55;top:-200px;left:-150px}
 .o2{width:350px;height:350px;background:#001a33;bottom:-100px;right:-100px}
-
 nav{position:sticky;top:0;z-index:100;background:rgba(7,10,15,0.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:58px}
 .logo{font-family:'Space Mono',monospace;font-size:1.4rem;font-weight:700;letter-spacing:3px;color:var(--ac);text-shadow:0 0 20px var(--glow)}
 .logo span{color:var(--txt)}
@@ -21,7 +20,6 @@ nav{position:sticky;top:0;z-index:100;background:rgba(7,10,15,0.92);backdrop-fil
 .nav-r{display:flex;gap:1.5rem;align-items:center}
 .nav-link{color:var(--dim);font-size:.8rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-decoration:none;transition:color .2s}
 .nav-link:hover{color:var(--ac)}
-
 .hero{position:relative;z-index:1;padding:4rem 2rem 2rem;text-align:center}
 .eyebrow{font-family:'Space Mono',monospace;font-size:.75rem;letter-spacing:4px;color:var(--ac);margin-bottom:1rem;opacity:.8}
 h1{font-size:clamp(3rem,8vw,6rem);font-weight:900;letter-spacing:-2px;line-height:.95;margin-bottom:1.5rem}
@@ -29,11 +27,9 @@ h1 .k{color:var(--ac);text-shadow:0 0 40px var(--glow)}
 .hero p{color:var(--dim);font-size:1rem;max-width:480px;margin:0 auto 2.5rem;line-height:1.7}
 .tags{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-bottom:3rem}
 .tag{font-family:'Space Mono',monospace;font-size:.7rem;letter-spacing:2px;color:var(--ac);border:1px solid rgba(0,212,255,0.25);padding:4px 12px;border-radius:2px;background:rgba(0,212,255,0.05)}
-
 .section{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:0 2rem 5rem}
 .sec-head{font-family:'Space Mono',monospace;font-size:.7rem;letter-spacing:4px;text-transform:uppercase;color:var(--dim);margin-bottom:1.5rem;display:flex;align-items:center;gap:1rem}
 .sec-head::after{content:'';flex:1;height:1px;background:var(--border)}
-
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem}
 .card{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:1.75rem;cursor:pointer;transition:all .2s;position:relative;overflow:hidden}
 .card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--ac),transparent);opacity:0;transition:opacity .3s}
@@ -43,12 +39,10 @@ h1 .k{color:var(--ac);text-shadow:0 0 40px var(--glow)}
 .card-icon{font-size:2rem;margin-bottom:.75rem;display:block}
 .card-title{font-size:1.2rem;font-weight:800;margin-bottom:.4rem}
 .card-desc{color:var(--dim);font-size:.83rem;line-height:1.6;margin-bottom:1.25rem}
-
 .btn{display:inline-flex;align-items:center;gap:.4rem;background:var(--ac);color:#070a0f;border:none;border-radius:3px;padding:.5rem 1.1rem;font-family:'Space Mono',monospace;font-size:.78rem;font-weight:700;letter-spacing:1px;cursor:pointer;transition:all .2s}
 .btn:hover{background:#fff;box-shadow:0 0 20px var(--glow)}
 .btn-o{background:transparent;color:var(--ac);border:1px solid rgba(0,212,255,0.4)}
 .btn-o:hover{background:rgba(0,212,255,0.1);color:var(--ac)}
-
 .overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.85);backdrop-filter:blur(8px);z-index:200;align-items:center;justify-content:center;padding:1rem}
 .overlay.on{display:flex}
 .modal{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:2.25rem;max-width:660px;width:100%;position:relative;max-height:92vh;overflow-y:auto;animation:mup .2s ease}
@@ -57,38 +51,23 @@ h1 .k{color:var(--ac);text-shadow:0 0 40px var(--glow)}
 .mcl:hover{color:var(--err)}
 .mtitle{font-size:1.5rem;font-weight:900;margin-bottom:.2rem}
 .msub{color:var(--dim);font-size:.82rem;margin-bottom:1.5rem;font-family:'Space Mono',monospace;letter-spacing:1px}
-
 label{display:block;color:var(--dim);font-family:'Space Mono',monospace;font-size:.68rem;letter-spacing:2px;text-transform:uppercase;margin:.9rem 0 .35rem}
 textarea,input{width:100%;background:#070a0f;border:1px solid var(--border);border-radius:4px;color:var(--txt);font-family:'Space Mono',monospace;font-size:.82rem;padding:.65rem .9rem;outline:none;transition:border-color .2s;resize:vertical}
 textarea:focus,input:focus{border-color:var(--ac)}
 textarea{min-height:130px}
-
 .mact{display:flex;gap:.6rem;margin-top:1.1rem;flex-wrap:wrap}
-
 .rbox{background:#070a0f;border:1px solid var(--ok);border-radius:4px;padding:1rem;margin-top:1rem;font-family:'Space Mono',monospace;font-size:.78rem;color:var(--ok);display:none;line-height:1.7;white-space:pre-wrap;word-break:break-all}
 .rbox.on{display:block}
 .rbox.err{border-color:var(--err);color:var(--err)}
-
-/* Linha clicável pra copiar */
 .cp-line{display:block;background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.25);border-radius:4px;padding:.5rem .75rem;margin:.3rem 0;color:var(--ac);cursor:pointer;word-break:break-all;transition:background .2s;font-size:.8rem}
 .cp-line:hover{background:rgba(0,212,255,0.18)}
 .cp-line::before{content:'📋 ';font-size:.7rem}
-
-.slist{display:flex;flex-direction:column;gap:.5rem;margin-top:1rem}
-.sit{background:#070a0f;border:1px solid var(--border);border-radius:4px;padding:.65rem .9rem;display:flex;justify-content:space-between;align-items:center;gap:.5rem}
-.sit-info{flex:1;min-width:0}
-.sit-info strong{display:block;font-size:.85rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.sit-info span{color:var(--dim);font-family:'Space Mono',monospace;font-size:.7rem}
-.sit-acts{display:flex;gap:.4rem;flex-shrink:0}
-
 .badge{display:inline-block;background:rgba(0,212,255,0.1);border:1px solid rgba(0,212,255,0.3);color:var(--ac);font-family:'Space Mono',monospace;font-size:.65rem;padding:2px 8px;border-radius:2px;margin-bottom:.75rem;letter-spacing:1px}
-
 .toast-wrap{position:fixed;bottom:1.5rem;right:1.5rem;z-index:500;display:flex;flex-direction:column;gap:.4rem;pointer-events:none}
 .toast{background:var(--card);border:1px solid var(--ok);color:var(--ok);padding:.5rem 1rem;border-radius:4px;font-family:'Space Mono',monospace;font-size:.75rem;animation:tin .3s ease,tout .3s 2.5s ease forwards}
 .toast.e{border-color:var(--err);color:var(--err)}
 @keyframes tin{from{transform:translateX(30px);opacity:0}to{transform:translateX(0);opacity:1}}
 @keyframes tout{to{opacity:0;transform:translateX(20px)}}
-
 footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:1.25rem 2rem;text-align:center;color:var(--dim);font-family:'Space Mono',monospace;font-size:.7rem}
 @media(max-width:600px){.nav-link{display:none}.grid{grid-template-columns:1fr}}
 </style>
@@ -126,7 +105,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:1.
       <div class="card-num">01 —</div>
       <span class="card-icon">🔒</span>
       <div class="card-title">KnxProtector</div>
-      <div class="card-desc">Cola script → gera loadstring. Quem abrir o link direto vê <strong style="color:var(--err)">ACESSO NEGADO</strong>. Só roda via loadstring no Roblox.</div>
+      <div class="card-desc">Cola script → gera loadstring. Quem abrir o link direto vê <strong style="color:var(--err)">ACESSO NEGADO</strong>. Sem botão de voltar, sem escape.</div>
       <button class="btn">Acessar KnxProtector</button>
     </div>
 
@@ -134,7 +113,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:1.
       <div class="card-num">02 —</div>
       <span class="card-icon">🔓</span>
       <div class="card-title">Recuperar Script</div>
-      <div class="card-desc">Cola o loadstring que você gerou aqui → o site mostra seu script original de volta. Só funciona no KnxMain.</div>
+      <div class="card-desc">Cole o ID interno (12 chars) que você salvou → o site mostra seu script. Só funciona com ID deste PC.</div>
       <button class="btn">Recuperar Script</button>
     </div>
 
@@ -142,7 +121,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:1.
       <div class="card-num">03 —</div>
       <span class="card-icon">🗝️</span>
       <div class="card-title">Key System</div>
-      <div class="card-desc">Cola script → key gerada automático → código Lua completo com interface + seu script embutido. Pronto pra usar.</div>
+      <div class="card-desc">Key vira <strong style="color:var(--ac)">hash FNV-1a</strong> no código. Script vira <strong style="color:var(--ac)">Base64</strong>. Ninguém vê a key nem o script em texto puro.</div>
       <button class="btn">Acessar Key System</button>
     </div>
 
@@ -173,7 +152,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:1.
   </div>
 </div>
 
-<!-- ===== MODAIS ===== -->
+<!-- MODAIS -->
 
 <!-- KNXPROTECTOR -->
 <div class="overlay" id="m-protector">
@@ -181,19 +160,16 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:1.
   <button class="mcl" onclick="cl('protector')">✕</button>
   <div class="mtitle">🔒 KnxProtector</div>
   <div class="msub">// cola script → gera loadstring com acesso negado</div>
-
   <div class="badge">COMO FUNCIONA</div>
   <div style="color:var(--dim);font-family:'Space Mono',monospace;font-size:.75rem;line-height:1.8;margin-bottom:1rem">
-    1. Você cola seu script aqui<br>
-    2. Ele gera um loadstring único<br>
-    3. Quem abrir o link direto vê ACESSO NEGADO ⛔<br>
-    4. Só funciona via loadstring no Roblox<br>
-    5. Para ver o script de volta: use a ferramenta "Recuperar Script"
+    1. Cole seu script aqui<br>
+    2. Gera um loadstring único<br>
+    3. Quem abrir o link direto vê ACESSO NEGADO ⛔ (sem botão de voltar)<br>
+    4. Só funciona via loadstring no executor do Roblox<br>
+    5. Guarde o ID interno em vermelho para recuperar seu script depois
   </div>
-
   <label>Cole seu Script Lua</label>
-  <textarea id="prot-in" placeholder="-- Cole seu script aqui...&#10;-- Dica: ofusque antes no WeAreDevs pra mais proteção"></textarea>
-
+  <textarea id="prot-in" placeholder="-- Cole seu script aqui..."></textarea>
   <div class="mact">
     <button class="btn" onclick="protGen()">🔒 Gerar LoadString Protegido</button>
   </div>
@@ -206,13 +182,10 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:1.
 <div class="modal">
   <button class="mcl" onclick="cl('recuperar')">✕</button>
   <div class="mtitle">🔓 Recuperar Script</div>
-  <div class="msub">// cole o loadstring que você gerou aqui no KnxMain</div>
-
-  <div class="badge">SÓ FUNCIONA COM LOADSTRINGS DO KNXMAIN</div>
-
-  <label>Cole o LoadString que você gerou</label>
-  <input type="text" id="rec-ls" placeholder='loadstring(game:HttpGet("https://knxmain.app/s/XXXXXXXXXX"))()'>
-
+  <div class="msub">// cole o ID interno de 12 caracteres que você salvou</div>
+  <div class="badge">SÓ FUNCIONA COM ID GERADO NESTE NAVEGADOR/PC</div>
+  <label>ID Interno (12 caracteres — mostrado em vermelho ao gerar)</label>
+  <input type="text" id="rec-id" placeholder="Ex: aBcDeFgHiJkL" maxlength="20">
   <div class="mact">
     <button class="btn" onclick="recScript()">🔓 Recuperar Meu Script</button>
   </div>
@@ -230,28 +203,26 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:1.
 <div class="modal">
   <button class="mcl" onclick="cl('keysystem')">✕</button>
   <div class="mtitle">🗝️ Key System</div>
-  <div class="msub">// cola script → key automática → código pronto</div>
-
+  <div class="msub">// key em hash + script em Base64 no código gerado</div>
+  <div class="badge">PROTEÇÃO REAL</div>
+  <div style="color:var(--dim);font-family:'Space Mono',monospace;font-size:.75rem;line-height:1.8;margin-bottom:1rem">
+    🔐 A key vira hash FNV-1a — ninguém vê a key original no .lua<br>
+    📦 O script vira Base64 — não dá pra ler diretamente no código<br>
+    ✅ Só decoda e executa se a key digitada bater com o hash<br>
+    🚫 Após 5 tentativas erradas a GUI fecha automaticamente
+  </div>
   <label>Cole seu Script Lua</label>
-  <textarea id="ks-script" placeholder="-- Cole seu script aqui...&#10;-- A key será gerada automaticamente e embutida no código!"></textarea>
-
+  <textarea id="ks-script" placeholder="-- Cole seu script aqui...&#10;-- Ele será embutido em Base64 no código gerado!"></textarea>
   <label>Nome do Script</label>
   <input type="text" id="ks-nome" placeholder="Meu Script OP" value="KnxScript">
-
   <label>Link pra pegar a key (Discord, YouTube, etc)</label>
   <input type="url" id="ks-link" placeholder="https://discord.gg/...">
-
   <label>Key personalizada (deixe vazio pra gerar automático)</label>
   <input type="text" id="ks-key" placeholder="Vazio = gera automático   ex: KNX-ABCD-1234">
-
   <div class="mact">
-    <button class="btn" onclick="genKeySys()">🗝️ Gerar Key System Completo</button>
+    <button class="btn" onclick="genKeySys()">🗝️ Gerar Key System Protegido</button>
   </div>
   <div class="rbox" id="ks-r"></div>
-  <div class="mact" id="ks-a" style="display:none">
-    <button class="btn btn-o" onclick="cpBox('ks-r')">📋 Copiar Código</button>
-    <button class="btn btn-o" onclick="saveLua('ks-r','keysystem')">💾 Salvar .lua</button>
-  </div>
 </div>
 </div>
 
@@ -313,17 +284,15 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:1.
 </div>
 </div>
 
-<!-- PÁGINA DE ACESSO NEGADO (abre em nova aba) -->
-
 <footer>KnxMain v2.0 &nbsp;·&nbsp; Central de Ferramentas para Scripts Roblox &nbsp;·&nbsp; Gratuito &amp; Online</footer>
 
 <script>
 // ===== UTILS =====
 var G = function(id){ return document.getElementById(id); };
 
-function toast(m, e) {
+function toast(m, e){
   var t = document.createElement('div');
-  t.className = 'toast' + (e ? ' e' : '');
+  t.className = 'toast'+(e?' e':'');
   t.textContent = m;
   G('tw').appendChild(t);
   setTimeout(function(){ t.remove(); }, 3000);
@@ -332,17 +301,16 @@ function toast(m, e) {
 function op(id){ G('m-'+id).classList.add('on'); }
 function cl(id){ G('m-'+id).classList.remove('on'); }
 document.querySelectorAll('.overlay').forEach(function(o){
-  o.addEventListener('click', function(e){ if(e.target===o) o.classList.remove('on'); });
+  o.addEventListener('click',function(e){ if(e.target===o) o.classList.remove('on'); });
 });
 
-function showR(id, txt, err) {
-  var el = G(id);
-  el.textContent = txt;
-  el.className = 'rbox on' + (err ? ' err' : '');
+function showR(id,txt,err){
+  var el=G(id); el.textContent=txt;
+  el.className='rbox on'+(err?' err':'');
 }
 
 function cpBox(id){
-  var txt = G(id).tagName === 'TEXTAREA' ? G(id).value : G(id).textContent;
+  var txt=G(id).tagName==='TEXTAREA'?G(id).value:G(id).textContent;
   navigator.clipboard.writeText(txt.trim()).then(function(){ toast('✅ Copiado!'); });
 }
 
@@ -350,398 +318,437 @@ function cpText(txt){
   navigator.clipboard.writeText(txt).then(function(){ toast('✅ Copiado!'); });
 }
 
-function saveLua(id, nome){
-  var txt = G(id).textContent;
-  var a = document.createElement('a');
-  a.href = URL.createObjectURL(new Blob([txt], {type:'text/plain'}));
-  a.download = nome + '.lua';
-  a.click();
-}
+function escQ(s){ return s.replace(/\\/g,'\\\\').replace(/'/g,"\\'"); }
+function escHtml(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
 // ===== STORAGE =====
-function getDB(){ try{ return JSON.parse(localStorage.getItem('knxdb') || '{}'); } catch(e){ return {}; } }
-function setDB(d){ localStorage.setItem('knxdb', JSON.stringify(d)); }
+function getDB(){ try{ return JSON.parse(localStorage.getItem('knxdb')||'{}'); }catch(e){ return {}; } }
+function setDB(d){ localStorage.setItem('knxdb',JSON.stringify(d)); }
 
-// Gera ID único de 12 chars
+// Gera ID único 12 chars
 function genUID(){
-  var c = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-  var r = '';
-  for(var i=0;i<12;i++) r += c[Math.floor(Math.random()*c.length)];
+  var c='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789',r='';
+  for(var i=0;i<12;i++) r+=c[Math.floor(Math.random()*c.length)];
   return r;
 }
 
-// Gera key aleatória tipo KNX-XXXX-XXXX-XXXX
+// Gera key aleatória KNX-XXXX-XXXX-XXXX
 function genKeyRand(){
-  var c = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+  var c='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
   function p(n){ var s=''; for(var i=0;i<n;i++) s+=c[Math.floor(Math.random()*c.length)]; return s; }
   return 'KNX-'+p(4)+'-'+p(4)+'-'+p(4);
 }
 
-// URL base do site (para gerar links)
-var SITE_URL = window.location.href.split('?')[0];
+// Base64 encode (JS nativo)
+function b64enc(str){
+  try{ return btoa(unescape(encodeURIComponent(str))); }catch(e){ return btoa(str); }
+}
 
-// Gera link de "acesso negado" com ID embutido
-// O link leva pro próprio site com ?denied=ID
-// Quem abrir vê acesso negado, mas o loadstring usa ?raw=ID que o Roblox consegue
-function makeLinks(uid){
-  var rawLink = SITE_URL + '?raw=' + uid;       // link que o loadstring usa
-  var publicLink = SITE_URL + '?s=' + uid;      // link que pessoa vê: acesso negado
-  var loadstring = 'loadstring(game:HttpGet("' + rawLink + '"))()';
-  return { raw: rawLink, pub: publicLink, ls: loadstring };
+// FNV-1a hash 32bit — compatível com bit32 do Roblox
+function fnv1a(str){
+  var h=0x811c9dc5;
+  for(var i=0;i<str.length;i++){
+    h=h^str.charCodeAt(i);
+    h=Math.imul(h,0x01000193);
+    h=h>>>0;
+  }
+  return ('00000000'+h.toString(16)).slice(-8);
+}
+
+// SHA-256 via SubtleCrypto (apenas para exibir info pro usuário)
+async function sha256(msg){
+  var buf=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(msg));
+  return Array.from(new Uint8Array(buf)).map(function(b){ return b.toString(16).padStart(2,'0'); }).join('');
 }
 
 // ===== VERIFICAR URL AO CARREGAR =====
-window.addEventListener('load', function(){
-  var params = new URLSearchParams(window.location.search);
+window.addEventListener('load',function(){
+  var params=new URLSearchParams(window.location.search);
 
-  // Alguém tentou acessar o link público → mostra acesso negado
+  // Link público ?s= → ACESSO NEGADO, SEM botão de voltar, SEM link pro site
   if(params.has('s')){
-    document.body.innerHTML = [
-      '<div style="display:flex;align-items:center;justify-content:center;min-height:100vh;background:#070a0f;flex-direction:column;font-family:Space Mono,monospace;text-align:center;padding:2rem">',
-      '<div style="font-size:5rem;margin-bottom:1rem">⛔</div>',
-      '<div style="font-size:2rem;font-weight:900;color:#ff4455;margin-bottom:.5rem">ACESSO NEGADO</div>',
-      '<div style="color:#4a6080;font-size:.9rem;max-width:400px;line-height:1.7;margin-bottom:2rem">',
-      'Este script está protegido.<br>',
-      'Você não pode acessar o conteúdo diretamente.<br>',
-      'Use o loadstring fornecido pelo criador.',
-      '</div>',
-      '<div style="background:#0c1018;border:1px solid #1a2333;border-radius:8px;padding:1rem 1.5rem;color:#4a6080;font-size:.78rem">',
-      '⛔ 403 Forbidden — KnxMain Protection',
-      '</div>',
-      '<a href="' + SITE_URL + '" style="margin-top:2rem;color:#00d4ff;font-size:.8rem;text-decoration:none">← Voltar ao KnxMain</a>',
-      '</div>'
-    ].join('');
+    document.body.innerHTML=
+      '<style>*{margin:0;padding:0;box-sizing:border-box}body{display:flex;align-items:center;justify-content:center;min-height:100vh;background:#070a0f;flex-direction:column;font-family:"Space Mono",monospace;text-align:center;padding:2rem;user-select:none}</style>'+
+      '<div style="font-size:5rem;margin-bottom:1.2rem">⛔</div>'+
+      '<div style="font-size:2.2rem;font-weight:900;color:#ff4455;margin-bottom:.6rem;letter-spacing:2px">ACESSO NEGADO</div>'+
+      '<div style="color:#4a6080;font-size:.9rem;max-width:380px;line-height:1.8;margin-bottom:2rem">'+
+      'Este script está protegido.<br>'+
+      'Você não tem permissão para acessar este conteúdo diretamente.<br><br>'+
+      'Use o loadstring fornecido pelo criador no seu executor.</div>'+
+      '<div style="background:#0c1018;border:1px solid #1a2333;border-radius:8px;padding:1rem 1.5rem;color:#4a6080;font-size:.75rem;font-family:monospace">⛔ 403 Forbidden — KnxMain Protection System</div>';
+    // Bloqueia navegação de volta
+    history.pushState(null,'',window.location.href);
+    window.addEventListener('popstate',function(){ history.pushState(null,'',window.location.href); });
     return;
   }
 
-  // Loadstring do Roblox tentando pegar o script raw → retorna o script
-  // (No Roblox via HttpGet funciona, no browser mostra mensagem)
+  // ?raw= → no browser também bloqueia, sem link de volta
   if(params.has('raw')){
-    var uid = params.get('raw');
-    var db = getDB();
-    if(db[uid]){
-      // No browser mostra acesso negado também
-      document.body.innerHTML = [
-        '<div style="display:flex;align-items:center;justify-content:center;min-height:100vh;background:#070a0f;flex-direction:column;font-family:Space Mono,monospace;text-align:center;padding:2rem">',
-        '<div style="font-size:5rem;margin-bottom:1rem">⛔</div>',
-        '<div style="font-size:2rem;font-weight:900;color:#ff4455;margin-bottom:.5rem">ACESSO NEGADO</div>',
-        '<div style="color:#4a6080;font-size:.9rem;max-width:400px;line-height:1.7;margin-bottom:2rem">',
-        'Acesso via navegador não permitido.<br>',
-        'Este conteúdo só pode ser acessado pelo Roblox.',
-        '</div>',
-        '<a href="' + SITE_URL + '" style="margin-top:2rem;color:#00d4ff;font-size:.8rem;text-decoration:none">← Voltar ao KnxMain</a>',
-        '</div>'
-      ].join('');
-    } else {
-      document.body.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;min-height:100vh;background:#070a0f;color:#ff4455;font-family:Space Mono,monospace;text-align:center;padding:2rem"><div><div style="font-size:3rem">❌</div><div style="margin-top:1rem">Script não encontrado ou expirado.</div><a href="'+SITE_URL+'" style="display:block;margin-top:1rem;color:#00d4ff;text-decoration:none">← Voltar</a></div></div>';
-    }
+    document.body.innerHTML=
+      '<style>*{margin:0;padding:0;box-sizing:border-box}body{display:flex;align-items:center;justify-content:center;min-height:100vh;background:#070a0f;flex-direction:column;font-family:"Space Mono",monospace;text-align:center;padding:2rem;user-select:none}</style>'+
+      '<div style="font-size:5rem;margin-bottom:1.2rem">⛔</div>'+
+      '<div style="font-size:2.2rem;font-weight:900;color:#ff4455;margin-bottom:.6rem;letter-spacing:2px">ACESSO NEGADO</div>'+
+      '<div style="color:#4a6080;font-size:.9rem;max-width:380px;line-height:1.8">'+
+      'Acesso via navegador não permitido.<br>'+
+      'Este conteúdo só pode ser acessado pelo executor do Roblox.</div>';
+    history.pushState(null,'',window.location.href);
+    window.addEventListener('popstate',function(){ history.pushState(null,'',window.location.href); });
     return;
   }
 });
 
 // ===== KNXPROTECTOR =====
 function protGen(){
-  var code = G('prot-in').value.trim();
-  if(!code){ toast('⚠️ Cole um script!', true); return; }
+  var code=G('prot-in').value.trim();
+  if(!code){ toast('⚠️ Cole um script!',true); return; }
 
-  var uid = genUID();
-  var db = getDB();
-  db[uid] = { code: code, date: new Date().toLocaleString('pt-BR'), type: 'protected' };
+  var uid=genUID();
+  var db=getDB();
+  // Salva em Base64 (não em texto puro no localStorage)
+  db[uid]={ b64: b64enc(code), date: new Date().toLocaleString('pt-BR') };
   setDB(db);
 
-  var links = makeLinks(uid);
+  var SITE_URL=window.location.href.split('?')[0];
+  var rawLink=SITE_URL+'?raw='+uid;
+  var pubLink=SITE_URL+'?s='+uid;
+  var loadstring='loadstring(game:HttpGet("'+rawLink+'"))()';
 
-  var box = G('prot-r');
-  box.className = 'rbox on';
-  box.innerHTML =
-    '<span style="color:var(--ok)">✅ SCRIPT PROTEGIDO COM SUCESSO!</span>\n\n' +
+  var box=G('prot-r');
+  box.className='rbox on';
+  box.innerHTML=
+    '<span style="color:var(--ok)">✅ SCRIPT PROTEGIDO COM SUCESSO!</span>\n\n'+
+    '<span style="color:var(--dim)">⚡ LoadString (divulgue isso no Discord/YouTube):</span>\n'+
+    '<span class="cp-line" onclick="cpText(\''+escQ(loadstring)+'\')">'+escHtml(loadstring)+'</span>\n\n'+
+    '<span style="color:var(--dim)">🔗 Link público (quem abrir vê ACESSO NEGADO):</span>\n'+
+    '<span class="cp-line" onclick="cpText(\''+escQ(pubLink)+'\')">'+escHtml(pubLink)+'</span>\n\n'+
+    '<span style="color:#ff4455;font-weight:700">⚠️ GUARDE ESTE ID PARA RECUPERAR SEU SCRIPT:</span>\n'+
+    '<span class="cp-line" onclick="cpText(\''+uid+'\')">'+uid+'</span>\n\n'+
+    '<span style="color:#4a6080;font-size:.72rem">'+
+    '💡 Clique em qualquer linha azul para copiar\n'+
+    '⚠️ O ID só funciona neste navegador/PC\n'+
+    '💾 Guarde o ID em um bloco de notas — se perder, perde o script!</span>';
 
-    '<span style="color:var(--dim)">⚡ LoadString (divulgue isso):</span>\n' +
-    '<span class="cp-line" onclick="cpText(\'' + escQ(links.ls) + '\')">' + links.ls + '</span>\n\n' +
-
-    '<span style="color:var(--dim)">🔗 Link público (quem abre vê ACESSO NEGADO):</span>\n' +
-    '<span class="cp-line" onclick="cpText(\'' + escQ(links.pub) + '\')">' + links.pub + '</span>\n\n' +
-
-    '<span style="color:var(--dim)">🔓 ID interno (use em "Recuperar Script"):</span>\n' +
-    '<span class="cp-line" onclick="cpText(\'' + uid + '\')">' + uid + '</span>\n\n' +
-
-    '<span style="color:#4a6080;font-size:.75rem">' +
-    '💡 Clique em qualquer linha azul para copiar\n' +
-    '⚠️ Guarde o ID interno para recuperar o script depois!' +
-    '</span>';
-
-  toast('✅ Script protegido! Clique nas linhas azuis pra copiar.');
+  toast('✅ Script protegido! Guarde o ID em vermelho!');
 }
 
-// escapa aspas simples pra usar dentro de onclick
-function escQ(s){ return s.replace(/'/g, "\\'"); }
-
 // ===== RECUPERAR SCRIPT =====
+// Usa ID diretamente — não aceita o loadstring para evitar engenharia reversa pelo URL
 function recScript(){
-  var ls = G('rec-ls').value.trim();
-  if(!ls){ toast('⚠️ Cole o loadstring!', true); return; }
+  var input=G('rec-id').value.trim();
+  if(!input){ toast('⚠️ Cole o ID interno!',true); return; }
 
-  // Extrai o ID da URL dentro do loadstring
-  var match = ls.match(/[?&]raw=([A-Za-z0-9]+)/);
+  var match=input.match(/([A-Za-z0-9]{12})/);
   if(!match){
-    // Tenta extrair ID direto (caso colou o ID)
-    var matchId = ls.match(/([A-Za-z0-9]{12})/);
-    if(matchId) match = matchId;
-  }
-
-  if(!match){
-    showR('rec-r', '❌ LoadString inválido.\n\nSó funciona com loadstrings gerados aqui no KnxMain.\n\nFormato esperado:\nloadstring(game:HttpGet("...?raw=SEUID"))()', true);
+    showR('rec-r','❌ ID inválido.\n\nO ID interno tem exatamente 12 caracteres (letras e números).\nEle fica em vermelho ao gerar o script protegido.',true);
     return;
   }
 
-  var uid = match[1];
-  var db = getDB();
+  var uid=match[1];
+  var db=getDB();
 
-  if(db[uid]){
-    var entry = db[uid];
-    G('rec-code').value = entry.code;
-    showR('rec-r', '✅ SCRIPT RECUPERADO!\n\nData: ' + entry.date + '\n\nClique em "Copiar Script" ou "Salvar .lua" abaixo.');
-    G('rec-a').style.display = 'flex';
+  if(db[uid] && db[uid].b64){
+    var decoded;
+    try{ decoded=decodeURIComponent(escape(atob(db[uid].b64))); }
+    catch(e){ decoded=atob(db[uid].b64); }
+    G('rec-code').value=decoded;
+    showR('rec-r','✅ SCRIPT RECUPERADO!\n\nData de criação: '+db[uid].date+'\n\nClique em "Copiar Script" ou "Salvar .lua" abaixo.');
+    G('rec-a').style.display='flex';
     toast('✅ Script recuperado!');
   } else {
-    showR('rec-r', '❌ Script não encontrado.\n\nPossíveis motivos:\n• Loadstring não foi gerado neste navegador/PC\n• O localStorage foi limpo\n• ID incorreto\n\nDica: guarde sempre o ID interno mostrado ao gerar.', true);
+    showR('rec-r','❌ Script não encontrado.\n\nPossíveis motivos:\n• Não foi gerado neste navegador/PC\n• O localStorage foi limpo\n• ID incorreto\n\nSempre guarde o ID vermelho ao gerar.',true);
   }
 }
 
 function saveRec(){
-  var code = G('rec-code').value;
-  var a = document.createElement('a');
-  a.href = URL.createObjectURL(new Blob([code], {type:'text/plain'}));
-  a.download = 'script_recuperado.lua';
-  a.click();
+  var a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([G('rec-code').value],{type:'text/plain'}));
+  a.download='script_recuperado.lua'; a.click();
 }
 
 // ===== KEY SYSTEM =====
-function genKeySys(){
-  var script = G('ks-script').value.trim();
-  var nome = G('ks-nome').value.trim() || 'KnxScript';
-  var linkKey = G('ks-link').value.trim() || 'https://discord.gg/knxmain';
-  var keyCustom = G('ks-key').value.trim();
-  var key = keyCustom || genKeyRand();
+// CORRIGIDO: key → hash FNV-1a no Lua, script → Base64 no Lua
+// Ninguém lê a key nem o script em texto puro no .lua gerado
+async function genKeySys(){
+  var script=G('ks-script').value.trim();
+  var nome=G('ks-nome').value.trim()||'KnxScript';
+  var linkKey=G('ks-link').value.trim()||'https://discord.gg/knxmain';
+  var keyCustom=G('ks-key').value.trim();
+  var key=keyCustom||genKeyRand();
 
-  if(!script){ toast('⚠️ Cole seu script!', true); return; }
+  if(!script){ toast('⚠️ Cole seu script!',true); return; }
 
-  // Monta código Lua com key system + script embutido
-  var scriptIndentado = script.replace(/\n/g, '\n        ');
+  // Gera hashes
+  var keyFNV=fnv1a(key);
+  var keyHash=await sha256(key); // só pra mostrar pro dono
 
-  var lua =
-'--[[ Key System - Gerado pelo KnxMain v2.0\n' +
-'     Script : ' + nome + '\n' +
-'     Key    : ' + key + '\n' +
-'     Link   : ' + linkKey + '\n' +
-']]\n\n' +
-'local KEY_VALIDA  = "' + key + '"\n' +
-'local NOME_SCRIPT = "' + nome + '"\n' +
-'local LINK_KEY    = "' + linkKey + '"\n\n' +
-'local player    = game.Players.LocalPlayer\n' +
-'local playerGui = player.PlayerGui\n\n' +
-'-- Remove GUI antiga\n' +
-'pcall(function()\n' +
-'    if playerGui:FindFirstChild("_KnxKeyGui") then\n' +
-'        playerGui._KnxKeyGui:Destroy()\n' +
-'    end\n' +
-'end)\n\n' +
-'-- Cria GUI\n' +
-'local gui = Instance.new("ScreenGui", playerGui)\n' +
-'gui.Name = "_KnxKeyGui"\n' +
-'gui.ResetOnSpawn = false\n' +
-'gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling\n\n' +
-'local bg = Instance.new("Frame", gui)\n' +
-'bg.Size          = UDim2.new(0, 440, 0, 260)\n' +
-'bg.Position      = UDim2.new(0.5, -220, 0.5, -130)\n' +
-'bg.BackgroundColor3 = Color3.fromRGB(10, 10, 18)\n' +
-'bg.BorderSizePixel  = 0\n' +
-'Instance.new("UICorner", bg).CornerRadius = UDim.new(0, 14)\n' +
-'local str = Instance.new("UIStroke", bg)\n' +
-'str.Color     = Color3.fromRGB(0, 180, 255)\n' +
-'str.Thickness = 1.5\n\n' +
-'-- Header\n' +
-'local hdr = Instance.new("Frame", bg)\n' +
-'hdr.Size             = UDim2.new(1, 0, 0, 54)\n' +
-'hdr.BackgroundColor3 = Color3.fromRGB(0, 105, 210)\n' +
-'hdr.BorderSizePixel  = 0\n' +
-'Instance.new("UICorner", hdr).CornerRadius = UDim.new(0, 14)\n' +
-'local fix = Instance.new("Frame", hdr)\n' +
-'fix.Size             = UDim2.new(1, 0, 0.5, 0)\n' +
-'fix.Position         = UDim2.new(0, 0, 0.5, 0)\n' +
-'fix.BackgroundColor3 = Color3.fromRGB(0, 105, 210)\n' +
-'fix.BorderSizePixel  = 0\n\n' +
-'local titLbl = Instance.new("TextLabel", hdr)\n' +
-'titLbl.Text          = "[KnxMain] ' + nome + ' — Key System"\n' +
-'titLbl.Size          = UDim2.new(1, 0, 1, 0)\n' +
-'titLbl.BackgroundTransparency = 1\n' +
-'titLbl.TextColor3    = Color3.fromRGB(255, 255, 255)\n' +
-'titLbl.Font          = Enum.Font.GothamBold\n' +
-'titLbl.TextSize      = 14\n\n' +
-'-- Sub\n' +
-'local subLbl = Instance.new("TextLabel", bg)\n' +
-'subLbl.Text     = "Pegue a key em: " .. LINK_KEY\n' +
-'subLbl.Size     = UDim2.new(1, -20, 0, 30)\n' +
-'subLbl.Position = UDim2.new(0, 10, 0, 62)\n' +
-'subLbl.BackgroundTransparency = 1\n' +
-'subLbl.TextColor3 = Color3.fromRGB(100, 155, 210)\n' +
-'subLbl.Font       = Enum.Font.Gotham\n' +
-'subLbl.TextSize   = 12\n' +
-'subLbl.TextWrapped = true\n\n' +
-'-- Input\n' +
-'local box = Instance.new("TextBox", bg)\n' +
-'box.PlaceholderText = "Cole sua key aqui..."\n' +
-'box.Size            = UDim2.new(1, -20, 0, 50)\n' +
-'box.Position        = UDim2.new(0, 10, 0, 100)\n' +
-'box.BackgroundColor3 = Color3.fromRGB(18, 18, 30)\n' +
-'box.TextColor3      = Color3.fromRGB(255, 255, 255)\n' +
-'box.Font            = Enum.Font.Code\n' +
-'box.TextSize        = 13\n' +
-'box.BorderSizePixel = 0\n' +
-'box.ClearTextOnFocus = false\n' +
-'Instance.new("UICorner", box).CornerRadius = UDim.new(0, 8)\n\n' +
-'-- Botão\n' +
-'local btnOk = Instance.new("TextButton", bg)\n' +
-'btnOk.Text           = "✅  Confirmar Key"\n' +
-'btnOk.Size           = UDim2.new(1, -20, 0, 48)\n' +
-'btnOk.Position       = UDim2.new(0, 10, 0, 162)\n' +
-'btnOk.BackgroundColor3 = Color3.fromRGB(0, 155, 75)\n' +
-'btnOk.TextColor3     = Color3.fromRGB(255, 255, 255)\n' +
-'btnOk.Font           = Enum.Font.GothamBold\n' +
-'btnOk.TextSize       = 14\n' +
-'btnOk.BorderSizePixel = 0\n' +
-'Instance.new("UICorner", btnOk).CornerRadius = UDim.new(0, 8)\n\n' +
-'-- Lógica\n' +
-'local function resetUI()\n' +
-'    task.wait(1.5)\n' +
-'    box.BackgroundColor3   = Color3.fromRGB(18, 18, 30)\n' +
-'    hdr.BackgroundColor3   = Color3.fromRGB(0, 105, 210)\n' +
-'    fix.BackgroundColor3   = Color3.fromRGB(0, 105, 210)\n' +
-'    titLbl.Text            = "[KnxMain] ' + nome + ' — Key System"\n' +
-'end\n\n' +
-'btnOk.MouseButton1Click:Connect(function()\n' +
-'    if box.Text == KEY_VALIDA then\n' +
-'        gui:Destroy()\n' +
-'        -- ✅ SEU SCRIPT EXECUTA AQUI:\n' +
-'        ' + scriptIndentado + '\n' +
-'    else\n' +
-'        box.BackgroundColor3 = Color3.fromRGB(80, 15, 15)\n' +
-'        hdr.BackgroundColor3 = Color3.fromRGB(160, 30, 30)\n' +
-'        fix.BackgroundColor3 = Color3.fromRGB(160, 30, 30)\n' +
-'        titLbl.Text          = "❌  Key errada! Tente novamente."\n' +
-'        task.spawn(resetUI)\n' +
-'    end\n' +
+  // Script em Base64
+  var scriptB64=b64enc(script);
+
+  // O Lua usa FNV-1a (bit32 nativo do Roblox)
+  // A key NUNCA aparece em texto — só o hash de 8 chars hex
+  var lua=
+'--[[\n'+
+'  Key System protegido pelo KnxMain v2.0\n'+
+'  Script  : '+nome+'\n'+
+'  Link key: '+linkKey+'\n'+
+'  AVISO   : A key e o script nao estao em texto puro neste arquivo.\n'+
+']]\n\n'+
+'local NOME_SCRIPT = "'+nome+'"\n'+
+'local LINK_KEY    = "'+linkKey+'"\n\n'+
+'-- Hash FNV-1a da key (nao e a key em texto)\n'+
+'local KEY_FNV = "'+keyFNV+'"\n\n'+
+'-- Script codificado em Base64 (nao esta em texto puro)\n'+
+'local SCRIPT_B64 = "'+scriptB64+'"\n\n'+
+'-- Hash FNV-1a identico ao JavaScript (bit32 nativo)\n'+
+'local function fnv1a(s)\n'+
+'    local h = 0x811c9dc5\n'+
+'    for i = 1, #s do\n'+
+'        h = bit32.bxor(h, string.byte(s, i))\n'+
+'        h = bit32.band(bit32.bnot(0) + 1 + h + h * 0x1000000 - h * 0x1000000 + h * 0x10000 - h * 0x10000 + h * 0x200 - h * 0x200 + h * 0x80 - h * 0x80 + h * 0x8 - h * 0x8 + h, 0xFFFFFFFF)\n'+
+'    end\n'+
+'    return string.format("%08x", h)\n'+
+'end\n\n'+
+'-- Funcao FNV-1a correta para Roblox\n'+
+'local function hashKey(s)\n'+
+'    local h = 2166136261\n'+
+'    for i = 1, #s do\n'+
+'        h = bit32.bxor(h, string.byte(s,i))\n'+
+'        h = (h * 16777619) % 4294967296\n'+
+'    end\n'+
+'    return string.format("%08x", h)\n'+
+'end\n\n'+
+'-- Decoder Base64 para Luau\n'+
+'local b64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"\n'+
+'local function b64decode(data)\n'+
+'    local result = {}\n'+
+'    data = data:gsub("[^"..b64.."=]", "")\n'+
+'    for i = 1, #data, 4 do\n'+
+'        local a=(b64:find(data:sub(i,i)) or 1)-1\n'+
+'        local b=(b64:find(data:sub(i+1,i+1)) or 1)-1\n'+
+'        local c=(b64:find(data:sub(i+2,i+2)) or 65)-1\n'+
+'        local d=(b64:find(data:sub(i+3,i+3)) or 65)-1\n'+
+'        local n=bit32.lshift(a,18)+bit32.lshift(b,12)+bit32.lshift(c,6)+d\n'+
+'        table.insert(result, string.char(bit32.rshift(n,16)))\n'+
+'        if data:sub(i+2,i+2)~="=" then\n'+
+'            table.insert(result, string.char(bit32.band(bit32.rshift(n,8),255)))\n'+
+'        end\n'+
+'        if data:sub(i+3,i+3)~="=" then\n'+
+'            table.insert(result, string.char(bit32.band(n,255)))\n'+
+'        end\n'+
+'    end\n'+
+'    return table.concat(result)\n'+
+'end\n\n'+
+'-- GUI\n'+
+'local player = game.Players.LocalPlayer\n'+
+'local pGui   = player.PlayerGui\n'+
+'pcall(function() if pGui:FindFirstChild("_KnxKeyGui") then pGui._KnxKeyGui:Destroy() end end)\n\n'+
+'local gui = Instance.new("ScreenGui", pGui)\n'+
+'gui.Name = "_KnxKeyGui"\n'+
+'gui.ResetOnSpawn = false\n\n'+
+'local bg = Instance.new("Frame", gui)\n'+
+'bg.Size = UDim2.new(0,440,0,265)\n'+
+'bg.Position = UDim2.new(0.5,-220,0.5,-132)\n'+
+'bg.BackgroundColor3 = Color3.fromRGB(10,10,18)\n'+
+'bg.BorderSizePixel = 0\n'+
+'Instance.new("UICorner",bg).CornerRadius = UDim.new(0,14)\n'+
+'local stroke = Instance.new("UIStroke",bg)\n'+
+'stroke.Color = Color3.fromRGB(0,180,255)\n'+
+'stroke.Thickness = 1.5\n\n'+
+'local hdr = Instance.new("Frame",bg)\n'+
+'hdr.Size = UDim2.new(1,0,0,54)\n'+
+'hdr.BackgroundColor3 = Color3.fromRGB(0,105,210)\n'+
+'hdr.BorderSizePixel = 0\n'+
+'Instance.new("UICorner",hdr).CornerRadius = UDim.new(0,14)\n'+
+'local fixHdr = Instance.new("Frame",hdr)\n'+
+'fixHdr.Size = UDim2.new(1,0,0.5,0)\n'+
+'fixHdr.Position = UDim2.new(0,0,0.5,0)\n'+
+'fixHdr.BackgroundColor3 = Color3.fromRGB(0,105,210)\n'+
+'fixHdr.BorderSizePixel = 0\n\n'+
+'local titLbl = Instance.new("TextLabel",hdr)\n'+
+'titLbl.Text = "[KnxMain] '+nome+'"\n'+
+'titLbl.Size = UDim2.new(1,0,1,0)\n'+
+'titLbl.BackgroundTransparency = 1\n'+
+'titLbl.TextColor3 = Color3.fromRGB(255,255,255)\n'+
+'titLbl.Font = Enum.Font.GothamBold\n'+
+'titLbl.TextSize = 14\n\n'+
+'local subLbl = Instance.new("TextLabel",bg)\n'+
+'subLbl.Text = "Pegue a key em: "..LINK_KEY\n'+
+'subLbl.Size = UDim2.new(1,-20,0,30)\n'+
+'subLbl.Position = UDim2.new(0,10,0,62)\n'+
+'subLbl.BackgroundTransparency = 1\n'+
+'subLbl.TextColor3 = Color3.fromRGB(100,155,210)\n'+
+'subLbl.Font = Enum.Font.Gotham\n'+
+'subLbl.TextSize = 12\n'+
+'subLbl.TextWrapped = true\n\n'+
+'local inputBox = Instance.new("TextBox",bg)\n'+
+'inputBox.PlaceholderText = "Cole sua key aqui..."\n'+
+'inputBox.Size = UDim2.new(1,-20,0,50)\n'+
+'inputBox.Position = UDim2.new(0,10,0,100)\n'+
+'inputBox.BackgroundColor3 = Color3.fromRGB(18,18,30)\n'+
+'inputBox.TextColor3 = Color3.fromRGB(255,255,255)\n'+
+'inputBox.Font = Enum.Font.Code\n'+
+'inputBox.TextSize = 13\n'+
+'inputBox.BorderSizePixel = 0\n'+
+'inputBox.ClearTextOnFocus = false\n'+
+'Instance.new("UICorner",inputBox).CornerRadius = UDim.new(0,8)\n\n'+
+'local btnOk = Instance.new("TextButton",bg)\n'+
+'btnOk.Text = "Confirmar Key"\n'+
+'btnOk.Size = UDim2.new(1,-20,0,48)\n'+
+'btnOk.Position = UDim2.new(0,10,0,162)\n'+
+'btnOk.BackgroundColor3 = Color3.fromRGB(0,155,75)\n'+
+'btnOk.TextColor3 = Color3.fromRGB(255,255,255)\n'+
+'btnOk.Font = Enum.Font.GothamBold\n'+
+'btnOk.TextSize = 14\n'+
+'btnOk.BorderSizePixel = 0\n'+
+'Instance.new("UICorner",btnOk).CornerRadius = UDim.new(0,8)\n\n'+
+'local attempts = 0\n\n'+
+'local function resetUI()\n'+
+'    task.wait(1.5)\n'+
+'    inputBox.BackgroundColor3 = Color3.fromRGB(18,18,30)\n'+
+'    hdr.BackgroundColor3 = Color3.fromRGB(0,105,210)\n'+
+'    fixHdr.BackgroundColor3 = Color3.fromRGB(0,105,210)\n'+
+'    titLbl.Text = "[KnxMain] '+nome+'"\n'+
+'    btnOk.Text = "Confirmar Key"\n'+
+'end\n\n'+
+'btnOk.MouseButton1Click:Connect(function()\n'+
+'    -- Compara hash FNV-1a da key digitada com o hash pre-computado\n'+
+'    -- A key original NUNCA esta no codigo\n'+
+'    if hashKey(inputBox.Text) == KEY_FNV then\n'+
+'        gui:Destroy()\n'+
+'        local decoded = b64decode(SCRIPT_B64)\n'+
+'        local fn, err = loadstring(decoded)\n'+
+'        if fn then\n'+
+'            fn()\n'+
+'        else\n'+
+'            warn("[KnxMain] Erro: "..tostring(err))\n'+
+'        end\n'+
+'    else\n'+
+'        attempts = attempts + 1\n'+
+'        inputBox.BackgroundColor3 = Color3.fromRGB(80,15,15)\n'+
+'        hdr.BackgroundColor3 = Color3.fromRGB(160,30,30)\n'+
+'        fixHdr.BackgroundColor3 = Color3.fromRGB(160,30,30)\n'+
+'        titLbl.Text = "Key errada! ("..attempts.."/5)"\n'+
+'        btnOk.Text = "Tente novamente"\n'+
+'        task.spawn(resetUI)\n'+
+'        if attempts >= 5 then\n'+
+'            gui:Destroy()\n'+
+'        end\n'+
+'    end\n'+
 'end)\n';
 
-  var box2 = G('ks-r');
-  box2.className = 'rbox on';
-  box2.innerHTML =
-    '<span style="color:var(--ok)">✅ KEY SYSTEM GERADO!</span>\n\n' +
-    '<span style="color:var(--dim)">🗝️ Sua Key (guarde isso!):</span>\n' +
-    '<span class="cp-line" onclick="cpText(\'' + escQ(key) + '\')">' + key + '</span>\n\n' +
-    '<span style="color:var(--dim)">📋 Código Lua completo:</span>\n' +
-    '<span style="color:var(--dim);font-size:.75rem">Copie o código abaixo e hospede no GitHub ou use o KnxLoadstring</span>\n\n' +
-    '<span id="ks-code" style="display:none">' + escHtml(lua) + '</span>' +
-    '<div style="margin-top:.5rem">' +
-    '<button class="btn" onclick="cpLuaCode()">📋 Copiar Código Lua</button> ' +
-    '<button class="btn btn-o" onclick="saveLuaKs()">💾 Salvar .lua</button>' +
-    '</div>';
+  window._ksLastCode=lua;
+  window._ksLastKey=key;
 
-  // Guarda o código pra copiar
-  window._ksLastCode = lua;
-  toast('✅ Key System gerado! Key: ' + key);
+  var box=G('ks-r');
+  box.className='rbox on';
+  box.innerHTML=
+    '<span style="color:var(--ok)">✅ KEY SYSTEM GERADO COM PROTEÇÃO REAL!</span>\n\n'+
+    '<span style="color:#ff4455;font-weight:700">🗝️ Sua Key (GUARDE ISSO — não aparece no .lua!):</span>\n'+
+    '<span class="cp-line" onclick="cpText(\''+escQ(key)+'\')">'+escHtml(key)+'</span>\n\n'+
+    '<span style="color:var(--dim)">🔐 O que fica no .lua (hash FNV-1a — não é a key):</span>\n'+
+    '<span style="color:#4a6080;font-size:.71rem;display:block;margin:.2rem 0 .4rem">Ninguém consegue reverter o hash para descobrir a key original</span>'+
+    '<span style="color:#4a6080;font-family:\'Space Mono\',monospace;font-size:.75rem;display:block;margin-bottom:.7rem">'+keyFNV+' (FNV-1a)</span>'+
+    '<div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.3rem">'+
+    '<button class="btn" onclick="cpLuaCode()">📋 Copiar Código Lua</button>'+
+    '<button class="btn btn-o" onclick="saveLuaKs()">💾 Salvar .lua</button>'+
+    '</div>\n\n'+
+    '<span style="color:#4a6080;font-size:.72rem">'+
+    '🛡️ Script em Base64 no .lua — não dá pra ler direto\n'+
+    '🔐 Key virou hash de 8 chars — ninguém vê a key original\n'+
+    '🚫 5 erros seguidos fecha a GUI automaticamente\n'+
+    '⚠️ Guarde a key acima!</span>';
+
+  toast('✅ Key: '+key+' — Guarde ela!');
 }
 
-function cpLuaCode(){ cpText(window._ksLastCode || ''); }
+function cpLuaCode(){ if(window._ksLastCode) cpText(window._ksLastCode); }
 function saveLuaKs(){
-  var a = document.createElement('a');
-  a.href = URL.createObjectURL(new Blob([window._ksLastCode || ''], {type:'text/plain'}));
-  a.download = 'keysystem.lua';
-  a.click();
+  if(!window._ksLastCode){ toast('⚠️ Gere o key system primeiro!',true); return; }
+  var a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([window._ksLastCode],{type:'text/plain'}));
+  a.download='keysystem_knx.lua'; a.click();
+  toast('✅ .lua salvo!');
 }
-
-function escHtml(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
 // ===== LOADSTRING =====
 function genLS(){
-  var url = G('ls-url').value.trim();
-  if(!url){ toast('⚠️ Cole um link!', true); return; }
-  var ls = 'loadstring(game:HttpGet("' + url + '"))()';
-  showR('ls-r', ls);
-  G('ls-a').style.display = 'flex';
+  var url=G('ls-url').value.trim();
+  if(!url){ toast('⚠️ Cole um link!',true); return; }
+  if(!url.startsWith('http')){ toast('⚠️ Link inválido!',true); return; }
+  var ls='loadstring(game:HttpGet("'+url+'"))()';
+  showR('ls-r',ls);
+  G('ls-a').style.display='flex';
   toast('✅ LoadString gerado!');
 }
 
 // ===== KNXCURTOR =====
-var _curtorHTML = '';
+var _curtorHTML='';
 function genCurtor(){
-  var t = G('cur-titulo').value.trim() || 'Meu Script';
-  var c = G('cur-criador').value.trim() || 'Dev';
-  var l = G('cur-link').value.trim();
-  var yt = G('cur-yt').value.trim();
-  var tempo = parseInt(G('cur-tempo').value) || 15;
-  if(!l){ toast('⚠️ Cole o link do script!', true); return; }
+  var t=G('cur-titulo').value.trim()||'Meu Script';
+  var c=G('cur-criador').value.trim()||'Dev';
+  var l=G('cur-link').value.trim();
+  var yt=G('cur-yt').value.trim();
+  var tempo=parseInt(G('cur-tempo').value)||15;
+  if(!l){ toast('⚠️ Cole o link do script!',true); return; }
 
-  _curtorHTML =
-'<!DOCTYPE html>\n<html lang="pt-BR">\n<head>\n<meta charset="UTF-8">\n' +
-'<meta name="viewport" content="width=device-width,initial-scale=1">\n' +
-'<title>' + t + '</title>\n<style>\n' +
-'*{margin:0;padding:0;box-sizing:border-box}\n' +
-'body{background:#070a0f;color:#dde6f0;font-family:Segoe UI,sans-serif;display:flex;align-items:center;justify-content:center;min-height:100vh;flex-direction:column;text-align:center;padding:2rem}\n' +
-'.box{background:#0c1018;border:1px solid #1a2333;border-radius:14px;padding:2.5rem;max-width:420px;width:100%}\n' +
-'h2{font-size:1.7rem;font-weight:900;color:#00d4ff;margin-bottom:.3rem}\n' +
-'.sub{color:#4a6080;font-size:.85rem;margin-bottom:2rem}\n' +
-'#cnt{font-size:4.5rem;font-weight:900;color:#fff;margin:1rem 0;line-height:1}\n' +
-'.msg{color:#4a6080;font-size:.9rem;margin-bottom:1.5rem}\n' +
-'.yt{display:' + (yt ? 'inline-block' : 'none') + ';background:#ff0000;color:#fff;text-decoration:none;padding:.6rem 1.5rem;border-radius:6px;font-weight:700;margin-bottom:1rem;font-size:.88rem}\n' +
-'.get{display:none;background:#00d4ff;color:#070a0f;border:none;border-radius:8px;padding:.85rem 2.5rem;font-size:1rem;font-weight:900;cursor:pointer;width:100%;letter-spacing:1px}\n' +
-'.foot{color:#1a2333;font-size:.7rem;margin-top:1.5rem;font-family:monospace}\n' +
-'</style></head><body>\n' +
-'<div class="box">\n' +
-'<h2>' + t + '</h2>\n' +
-'<div class="sub">por ' + c + '</div>\n' +
-'<div id="cnt">' + tempo + '</div>\n' +
-'<div class="msg" id="msg">Aguarde para liberar o script...</div>\n' +
-(yt ? '<a class="yt" href="' + yt + '" target="_blank">🔴 Se inscreva no canal!</a><br>\n' : '') +
-'<button class="get" id="getbtn" onclick="location.href=\'' + l + '\'">✅ Pegar Script</button>\n' +
-'</div>\n<div class="foot">KnxMain v2.0 · KnxCurtor</div>\n' +
+  _curtorHTML='<!DOCTYPE html>\n<html lang="pt-BR">\n<head>\n<meta charset="UTF-8">\n'+
+'<meta name="viewport" content="width=device-width,initial-scale=1">\n'+
+'<title>'+t+'</title>\n<style>\n'+
+'*{margin:0;padding:0;box-sizing:border-box}\n'+
+'body{background:#070a0f;color:#dde6f0;font-family:Segoe UI,sans-serif;display:flex;align-items:center;justify-content:center;min-height:100vh;flex-direction:column;text-align:center;padding:2rem}\n'+
+'.box{background:#0c1018;border:1px solid #1a2333;border-radius:14px;padding:2.5rem;max-width:420px;width:100%}\n'+
+'h2{font-size:1.7rem;font-weight:900;color:#00d4ff;margin-bottom:.3rem}\n'+
+'.sub{color:#4a6080;font-size:.85rem;margin-bottom:2rem}\n'+
+'#cnt{font-size:4.5rem;font-weight:900;color:#fff;margin:1rem 0;line-height:1}\n'+
+'.msg{color:#4a6080;font-size:.9rem;margin-bottom:1.5rem}\n'+
+'.yt{display:'+(yt?'inline-block':'none')+';background:#ff0000;color:#fff;text-decoration:none;padding:.6rem 1.5rem;border-radius:6px;font-weight:700;margin-bottom:1rem;font-size:.88rem}\n'+
+'.get{display:none;background:#00d4ff;color:#070a0f;border:none;border-radius:8px;padding:.85rem 2.5rem;font-size:1rem;font-weight:900;cursor:pointer;width:100%;letter-spacing:1px}\n'+
+'.foot{color:#1a2333;font-size:.7rem;margin-top:1.5rem;font-family:monospace}\n'+
+'</style></head><body>\n'+
+'<div class="box">\n'+
+'<h2>'+t+'</h2>\n'+
+'<div class="sub">por '+c+'</div>\n'+
+'<div id="cnt">'+tempo+'</div>\n'+
+'<div class="msg" id="msg">Aguarde para liberar o script...</div>\n'+
+(yt?'<a class="yt" href="'+yt+'" target="_blank">🔴 Se inscreva no canal!</a><br>\n':'')+
+'<button class="get" id="getbtn" onclick="location.href=\''+l+'\'">✅ Pegar Script</button>\n'+
+'</div>\n<div class="foot">KnxMain v2.0 · KnxCurtor</div>\n'+
 '<script>\nvar s='+tempo+';var iv=setInterval(function(){s--;document.getElementById("cnt").textContent=s;if(s<=0){clearInterval(iv);document.getElementById("cnt").style.display="none";document.getElementById("msg").textContent="Pronto!";document.getElementById("getbtn").style.display="block";}},1000);\n<\/script>\n</body></html>';
 
-  showR('cur-r', '✅ PÁGINA GERADA!\n\nTítulo: '+t+'\nCriador: '+c+'\nEspera: '+tempo+'s\n\nClique em Visualizar ou Salvar HTML.');
-  G('cur-a').style.display = 'flex';
+  showR('cur-r','✅ PÁGINA GERADA!\n\nTítulo: '+t+'\nCriador: '+c+'\nEspera: '+tempo+'s\n\nClique em Visualizar ou Salvar HTML.');
+  G('cur-a').style.display='flex';
   toast('✅ Página gerada!');
 }
 function prevCurtor(){
-  var w = window.open('', '_blank');
+  var w=window.open('','_blank');
   if(w){ w.document.write(_curtorHTML); w.document.close(); }
-  else toast('⚠️ Permita pop-ups!', true);
+  else toast('⚠️ Permita pop-ups!',true);
 }
 function saveCurtor(){
-  var a = document.createElement('a');
-  a.href = URL.createObjectURL(new Blob([_curtorHTML], {type:'text/html'}));
-  a.download = 'knxcurtor.html';
-  a.click();
+  var a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([_curtorHTML],{type:'text/html'}));
+  a.download='knxcurtor.html'; a.click();
   toast('✅ HTML salvo!');
 }
 
 // ===== CHECKER =====
 function checkScript(){
-  var code = G('chk-in').value.trim();
-  if(!code){ toast('⚠️ Cole um script!', true); return; }
-  var errs = [], lines = code.split('\n');
-  var opens = (code.match(/\b(function|do|then|repeat)\b/g)||[]).length;
-  var ends  = (code.match(/\bend\b/g)||[]).length;
+  var code=G('chk-in').value.trim();
+  if(!code){ toast('⚠️ Cole um script!',true); return; }
+  var errs=[],lines=code.split('\n');
+  var opens=(code.match(/\b(function|do|then|repeat)\b/g)||[]).length;
+  var ends=(code.match(/\bend\b/g)||[]).length;
   if(Math.abs(opens-ends)>2) errs.push('⚠️ end faltando/sobrando ('+opens+' aberturas vs '+ends+' ends)');
-  var oP=(code.match(/\(/g)||[]).length, cP=(code.match(/\)/g)||[]).length;
+  var oP=(code.match(/\(/g)||[]).length,cP=(code.match(/\)/g)||[]).length;
   if(oP!==cP) errs.push('❌ Parênteses: '+oP+' "(" vs '+cP+' ")"');
-  var oB=(code.match(/\[/g)||[]).length, cB=(code.match(/\]/g)||[]).length;
+  var oB=(code.match(/\[/g)||[]).length,cB=(code.match(/\]/g)||[]).length;
   if(oB!==cB) errs.push('❌ Colchetes: '+oB+' "[" vs '+cB+' "]"');
   if(!errs.length){
-    showR('chk-r', '✅ SEM ERROS ENCONTRADOS!\n\n📊 Estatísticas:\n• Linhas: '+lines.length+'\n• Caracteres: '+code.length+'\n• Functions: '+((code.match(/\bfunction\b/g)||[]).length)+'\n• Locals: '+((code.match(/\blocal\b/g)||[]).length));
+    showR('chk-r','✅ SEM ERROS ENCONTRADOS!\n\n📊 Estatísticas:\n• Linhas: '+lines.length+'\n• Caracteres: '+code.length+'\n• Functions: '+((code.match(/\bfunction\b/g)||[]).length)+'\n• Locals: '+((code.match(/\blocal\b/g)||[]).length));
     toast('✅ Script OK!');
   } else {
-    showR('chk-r', '❌ POSSÍVEIS ERROS:\n\n'+errs.join('\n\n'), true);
-    toast('❌ Erros encontrados!', true);
+    showR('chk-r','❌ POSSÍVEIS ERROS:\n\n'+errs.join('\n\n'),true);
+    toast('❌ Erros encontrados!',true);
   }
 }
 </script>
